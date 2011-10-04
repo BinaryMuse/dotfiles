@@ -1,0 +1,3 @@
+--pager=less
+--type-add=coffee=.coffee
+--color
