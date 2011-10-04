@@ -28,6 +28,9 @@ set hidden
 set splitbelow
 set splitright
 
+" Search options
+:nnoremap <silent> <space> :nohlsearch<Bar>:echo<CR>
+
 " Stealing some guy's status line
 " since I don't know the formatting
 set stl=%f\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n\ [%b][0x%B]
