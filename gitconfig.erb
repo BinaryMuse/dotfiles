@@ -1,0 +1,16 @@
+[user]
+        name = <%= print("Your Name: "); STDOUT.flush; STDIN.gets.chomp %>
+        email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
+[color]
+        ui = auto
+[alias]
+        co = checkout
+        ci = commit
+        lol = log --oneline --decorate
+        diffc = diff --color
+        diffcc = diff --color --cached
+[github]
+        user = <%= print("GitHub Username: "); STDOUT.flush; STDIN.gets.chomp %>
+        token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>
+[core]
+        autocrlf = input
