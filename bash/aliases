@@ -1,0 +1,21 @@
+# Vim launches MacVim
+alias vim="mvim -v"
+
+# Show all files in long format
+alias ll='ls -la'
+
+# Flush the DNS cache
+alias fcache='dscacheutil -flushcache'
+
+# Rails alias
+alias r='rails'
+
+# Git stuff
+alias s='git status'
+alias d='git diff'
+alias ds='git diff --staged'
+
+# git diff with color to bcat
+# both cached and uncached
+alias gitd='git diff --color | bcat -a'
+alias gitdc='git diff --color --cached | bcat -a'

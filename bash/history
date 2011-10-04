@@ -1,0 +1,7 @@
+# erase duplicates on startup
+export HISTCONTROL=erasedups
+export EDITOR=vim
+# big history
+export HISTSIZE=10000
+# append on quit
+shopt -s histappend

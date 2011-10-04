@@ -1,0 +1,8 @@
+[[ -s "/Users/btilley/.rvm/scripts/rvm" ]] && source "/Users/btilley/.rvm/scripts/rvm"
+
+function rvmrc {
+  rvm gemset create $1
+  rvm gemset use $1
+  echo "rvm gemset use $1" > .rvmrc
+  rvm rvmrc trust
+}
