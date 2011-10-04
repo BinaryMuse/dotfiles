@@ -1,7 +1,6 @@
 require 'rake'
 require 'erb'
 
-DOTFILES_DIR = File.expand_path File.dirname(__FILE__)
 $replace_all = false
 
 task :default => :install
@@ -41,7 +40,6 @@ def process_file(file)
 end
 
 def replace_file(source, target)
-  #puts "Deleting file #{target}"
   system %Q{rm -rf "#{target}"}
   create_file source, target
 end
