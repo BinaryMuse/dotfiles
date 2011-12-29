@@ -8,6 +8,9 @@ set t_Co=256
 let mapleader = ","
 let g:mapleader = ","
 
+" Misc. file types
+au BufRead,BufNewFile *.md set filetype=markdown
+
 nmap <leader>v :tabedit $MYVIMRC<CR>
 
 :command Q q
