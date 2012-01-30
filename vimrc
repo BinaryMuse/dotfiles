@@ -5,6 +5,10 @@ if has("autocmd")
   autocmd bufwritepost vimrc source $MYVIMRC
 endif
 
+" Enable matchit
+runtime macros/matchit.vim
+set nocompatible
+
 set t_Co=256
 
 " Leader
