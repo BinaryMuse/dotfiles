@@ -1,3 +1,6 @@
+call pathogen#infect()
+call pathogen#helptags()
+
 if has("autocmd")
   autocmd bufwritepost vimrc source $MYVIMRC
 endif
