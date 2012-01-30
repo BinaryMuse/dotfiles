@@ -76,7 +76,7 @@ map <silent> <leader>n :set number!<CR>
 
 " Make :w!! save the file as sudo
 " (in case you forget)
-cmap w!! !sudo tee % > /dev/null
+cmap w!! %w !sudo tee % > /dev/null
 
 " Don't split words if a linebreak is required
 set linebreak
