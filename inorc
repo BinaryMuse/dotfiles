@@ -1,0 +1,10 @@
+[build]
+board-model = atmega328
+
+[upload]
+board-model = atmega328
+serial-port = /dev/tty.usbserial-A600enDA
+
+[serial]
+serial-port = /dev/tty.usbserial-A600enDA
+baud-rate = 9600
