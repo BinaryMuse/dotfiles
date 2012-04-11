@@ -64,7 +64,7 @@ map <leader>g !git status<CR>
 
 " Turn syntax hightlighting on
 syntax on
-colors jellybeans_custom
+colors solarized
 
 " Display an incomplete cmmand in the lower right
 set showcmd
