@@ -1,3 +1,5 @@
 --pager=less
 --type-set=coffee=.coffee
+--type-set=haml=.haml
+--type-set=erb=.erb
 --color
