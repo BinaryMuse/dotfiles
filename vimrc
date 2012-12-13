@@ -123,6 +123,7 @@ map <leader>w :StripTrailingWhitespace<CR>
 autocmd BufWritePre * :StripTrailingWhitespace
 
 au BufRead,BufNewFile *.ino set filetype=cpp
+au BufRead,BufNewFile *.rabl set filetype=ruby
 
 " Vagrantfile
 autocmd BufRead,BufNewFile Vagrantfile set filetype=ruby
