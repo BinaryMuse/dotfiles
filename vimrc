@@ -124,6 +124,7 @@ autocmd BufWritePre * :StripTrailingWhitespace
 
 au BufRead,BufNewFile *.ino set filetype=cpp
 au BufRead,BufNewFile *.rabl set filetype=ruby
+au BufRead,BufNewFile *.iced set filetype=coffee
 
 " Vagrantfile
 autocmd BufRead,BufNewFile Vagrantfile set filetype=ruby
