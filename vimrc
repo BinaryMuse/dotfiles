@@ -1,6 +1,8 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+:set dir=>~/.vimswaps//
+
 if has("autocmd")
   autocmd bufwritepost vimrc source $MYVIMRC
 endif
