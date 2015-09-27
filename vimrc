@@ -1,102 +1,116 @@
-call pathogen#infect()
-call pathogen#helptags()
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-:set dir=>~/.vimswaps//
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
-if has("autocmd")
-  autocmd bufwritepost vimrc source $MYVIMRC
-endif
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
 
-" Enable matchit
-runtime macros/matchit.vim
-set nocompatible
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+Plugin 'tpope/vim-fugitive'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'mattreduce/vim-mix'
+Plugin 'bling/vim-airline'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'tomasr/molokai'
+Plugin 'ervandew/supertab'
+Plugin 'mileszs/ack.vim'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'groenewege/vim-less'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'fatih/vim-go'
+Plugin 'othree/yajs'
+Plugin 'SirVer/ultisnips'
+Plugin 'lambdatoast/elm.vim'
 
-set t_Co=256
+set iskeyword-=.
 
-" Leader
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList          - list configured plugins
+" :PluginInstall(!)    - install (update) plugins
+" :PluginSearch(!) foo - search (or refresh cache first) for foo
+" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+autocmd BufWritePost .vimrc source %
+
 let mapleader = ","
-let g:mapleader = ","
 
-" Misc. file types
 au BufRead,BufNewFile *.md set filetype=markdown
 
 nmap <leader>v :tabedit $MYVIMRC<CR>
 
-:command Q q
-:command W w
-
-" jj in insert mode to get to normal mode
-:imap jj <Esc>
-
-" Set the command height to 2 lines
-set cmdheight=2
-
-" Always show the status line
-set laststatus=2
-
-" Allow me to switch buffers if my buffer has changes
-set hidden
+nmap <leader>n :NERDTreeTabsToggle<CR>
+nmap <leader>N :NERDTreeFind<CR>
+nmap <leader>b :CtrlPBuffer<CR>
 
 set splitbelow
 set splitright
 
-" Search options
-:nnoremap <silent> <space> :nohlsearch<Bar>:echo<CR>
-
-" Stealing some guy's status line
-" since I don't know the formatting
-set stl=%f\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n\ [%b][0x%B]
-
-" Causes the cursor to briefly jump back
-" to a brace/paren/etc. match whenever
-" you type a closing one.
 set showmatch
 
-" Toggle NERDTree
-" map <leader>t :NERDTreeToggle<CR>
+set t_Co=256
 
-nmap <silent> <Leader>t :CommandT<CR>
-nmap <silent> <Leader>b :CommandTBuffer<CR>
+syntax enable
+" set background=light
+" colorscheme solarized
 
-" Git status
-map <leader>g !git status<CR>
+set background=dark
+colorscheme molokai
 
-" Colors and Syntax                                            {{{1
-" -----------------------------------------------------------------
+set number
+set cursorline
+set linebreak
 
-" Turn syntax hightlighting on
-syntax on
-colors solarized
-
-" Display an incomplete cmmand in the lower right
-set showcmd
-
-" Scrolling margin and number of lines when leaving screen
 set scrolloff=4
 set scrolljump=5
 
-" Highlight the cursor line
-set cursorline
+set laststatus=2
 
-" Line numbers, fool!
-set number
-" Toggle line numbers with leader-n
-map <silent> <leader>n :set number!<CR>
+let g:airline_powerline_fonts = 1
+set encoding=utf-8
+set guifont=Inconsolata\ for\ Powerline:h15
 
-" Make :w!! save the file as sudo
-" (in case you forget)
-cmap w!! %w !sudo tee % > /dev/null
-
-" Don't split words if a linebreak is required
-set linebreak
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc     " MacOSX/Linux
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|vendor\/ruby|(\.(git|hg|svn)))$'
+let g:ctrlp_max_files=0
 
 " Tabs and spaces                                              {{{1
 " -----------------------------------------------------------------
 
+" General
 set softtabstop=2
 set shiftwidth=2
 set shiftround
 set expandtab
+set tabstop=4
+
+" Lookbook
+" set noexpandtab
+" set copyindent
+" set preserveindent
+" set softtabstop=0
+" set shiftwidth=4
+" set tabstop=4
+
 " Auto indent?
 " set smartindent
 " set autoindent
@@ -129,6 +143,13 @@ au BufRead,BufNewFile *.rabl set filetype=ruby
 au BufRead,BufNewFile *.iced set filetype=coffee
 au BufRead,BufNewFile *.sbt set filetype=scala
 au BufRead,BufNewFile *.ejs set filetype=html
+au BufRead,BufNewFile *.gss set filetype=css
+
+autocmd Filetype go setlocal noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
+" autocmd Filetype javascript setlocal noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
+" autocmd Filetype jsx setlocal noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
 
 " Vagrantfile
 autocmd BufRead,BufNewFile Vagrantfile set filetype=ruby
+
+set spell
