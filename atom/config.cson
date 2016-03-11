@@ -1,0 +1,48 @@
+"*":
+  core:
+    disabledPackages: [
+      "linter-js-standard"
+      "linter"
+      "vim-mode"
+    ]
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+    softWrap: true
+    softWrapHangingIndent: 2
+  "exception-reporting":
+    userId: "0105e07e-ea6b-39bc-7746-73f63884809f"
+  git:
+    thething: "yep"
+  "language-babel":
+    allowLocalOverride: true
+    autoIndentJSX: true
+  "language-elm": {}
+  linter: {}
+  "linter-js-standard":
+    honorStyleSettings: true
+  tabs: {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "vim-mode-plus":
+    disableInputMethodExceptInsertMode: true
+    highlightSearch: true
+    setCursorToStartOfChangeOnUndoRedo: true
+    showHoverSearchCounter: true
+    stayOnTransformString: true
+    stayOnYank: true
+    useSmartcaseForSearch: true
+  "vim-modeline": {}
+  welcome:
+    showOnStartup: false
+  whitespace: {}
+".babel.regexp.source":
+  editor:
+    softWrapHangingIndent: 2
+".js.jsx.source":
+  editor:
+    softWrapHangingIndent: 2

@@ -1,0 +1,28 @@
+'*':
+  'ctrl-p': 'fuzzy-finder:toggle-file-finder'
+'atom-text-editor.vim-mode-plus':
+  'ctrl-/': 'editor:toggle-line-comments'
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  # ex mode
+  ':': 'vim-mode-plus-ex-mode:open'
+  '!': 'vim-mode-plus-ex-mode:toggle-setting'
+  # subword movement
+  'ctrl-e': 'vim-mode-plus-user:move-to-end-of-subword'
+  'Q':      'vim-mode-plus-user:move-to-beginning-of-subword'
+  'q':      'vim-mode-plus-user:move-to-next-subword'
+  # others
+  'g c': 'vim-mode-plus:select-latest-change'
+  'S': 'vim-mode-plus:surround-word'
+  'y s': 'vim-mode-plus:surround'
+  'm s': 'vim-mode-plus:map-surround'
+  # 'd s': 'vim-mode-plus:delete-surround-any-pair'
+  'c s': 'vim-mode-plus:change-surround-any-pair'
+'atom-text-editor.vim-mode-plus.linewise:not(.insert-mode)':
+  # single line toggle comments
+  'g c': 'editor:toggle-line-comments'
+'atom-text-editor.vim-mode-plus:not(.linewise):not(.insert-mode)':
+  # visual mode toggle comments
+  'g c c': 'editor:toggle-line-comments'
+'atom-text-editor.vim-mode-plus.operator-pending-mode, atom-text-editor.vim-mode-plus.visual-mode':
+  # subword motions (ciq, diq, etc)
+  'i q': 'vim-mode-plus-user:inner-subword'
