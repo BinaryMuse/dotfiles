@@ -1,11 +1,17 @@
-'*':
+'atom-workspace':
+  'ctrl-alt-cmd-w': 'tabs:close-all-tabs'
+  'cmd-shift-a': 'tree-view:add-file'
+  'cmd-alt-a': 'tree-view:add-folder'
   'ctrl-p': 'fuzzy-finder:toggle-file-finder'
+'atom-workspace atom-text-editor:not([mini])':
+  'cmd-shift-L': 'elm-format:file'
 'atom-text-editor.vim-mode-plus':
   'ctrl-/': 'editor:toggle-line-comments'
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   # ex mode
-  ':': 'vim-mode-plus-ex-mode:open'
-  '!': 'vim-mode-plus-ex-mode:toggle-setting'
+  # ':': 'vim-mode-plus-ex-mode:open'
+  ':': 'vim-mode-plus-ex-mode-boottom:toggle'
+  # '!': 'vim-mode-plus-ex-mode:toggle-setting'
   # subword movement
   'ctrl-e': 'vim-mode-plus-user:move-to-end-of-subword'
   'Q':      'vim-mode-plus-user:move-to-beginning-of-subword'
@@ -14,9 +20,9 @@
   'g c': 'vim-mode-plus:select-latest-change'
   'S': 'vim-mode-plus:surround-word'
   'y s': 'vim-mode-plus:surround'
-  'm s': 'vim-mode-plus:map-surround'
+  # 'm s': 'vim-mode-plus:map-surround'
   # 'd s': 'vim-mode-plus:delete-surround-any-pair'
-  'c s': 'vim-mode-plus:change-surround-any-pair'
+  # 'c s': 'vim-mode-plus:change-surround-any-pair'
 'atom-text-editor.vim-mode-plus.linewise:not(.insert-mode)':
   # single line toggle comments
   'g c': 'editor:toggle-line-comments'
@@ -26,3 +32,5 @@
 'atom-text-editor.vim-mode-plus.operator-pending-mode, atom-text-editor.vim-mode-plus.visual-mode':
   # subword motions (ciq, diq, etc)
   'i q': 'vim-mode-plus-user:inner-subword'
+# 'atom-text-editor.autocomplete-active':
+#   'enter': 'editor:newline'

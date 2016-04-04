@@ -1,36 +1,72 @@
 "*":
+  "atom-beautify":
+    html_preserve_newlines: false
+    js_preserve_newlines: false
+    js_space_before_conditional: false
+  "autocomplete-flow": {}
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    confirmCompletion: "tab"
+  conceal:
+    replacements:
+      "::": "asdf"
   core:
+    apmPath: "/Users/mtilley/github/apm/bin/apm"
     disabledPackages: [
-      "linter-js-standard"
-      "linter"
+      "github"
+      "vim-mode-plus-move-to-symbols"
+      "vim-mode-plus-subword-movement"
+      "vim-mode-plus-ex-mode-bottom"
+      "elm-format"
       "vim-mode"
+      "linter-js-standard"
     ]
     themes: [
       "one-light-ui"
       "one-light-syntax"
     ]
   editor:
+    fontFamily: "Fira Code"
+    fontSize: 15
     invisibles: {}
     showIndentGuide: true
     softWrap: true
     softWrapHangingIndent: 2
+  "elm-format":
+    showNotifications: false
   "exception-reporting":
     userId: "0105e07e-ea6b-39bc-7746-73f63884809f"
+  "file-icons":
+    coloured: false
+  "find-and-replace":
+    openProjectFindResultsInRightPane: true
   git:
     thething: "yep"
+  "git-diff": {}
+  "gometalinter-linter":
+    args: [
+      "-e /comment on exported /"
+    ]
+  "ide-flow":
+    flowPath: "/usr/local/bin/flow"
   "language-babel":
     allowLocalOverride: true
     autoIndentJSX: true
   "language-elm": {}
-  linter: {}
+  linter:
+    gutterPosition: "Left"
   "linter-js-standard":
     honorStyleSettings: true
-  tabs: {}
+    lintMarkdownFiles: true
+  "markdown-preview":
+    useGitHubStyle: true
+  tabs:
+    enableVcsColoring: true
   "tree-view":
-    hideVcsIgnoredFiles: true
+    focusOnReveal: false
+    squashDirectoryNames: true
   "vim-mode-plus":
-    disableInputMethodExceptInsertMode: true
-    highlightSearch: true
+    ignoreCaseForSearch: true
     setCursorToStartOfChangeOnUndoRedo: true
     showHoverSearchCounter: true
     stayOnTransformString: true
@@ -43,6 +79,48 @@
 ".babel.regexp.source":
   editor:
     softWrapHangingIndent: 2
+".c2hs.source":
+  editor:
+    softWrapHangingIndent: 2
+".cabal.source":
+  editor:
+    softWrapHangingIndent: 2
+".coffee.source":
+  editor:
+    softWrapHangingIndent: 2
+".gfm.source":
+  editor:
+    softWrapHangingIndent: 2
+".go.source":
+  editor:
+    softWrapHangingIndent: 2
+".gohtml.html.text":
+  editor:
+    softWrapHangingIndent: 2
+".gotemplate.source":
+  editor:
+    softWrapHangingIndent: 2
+".haskell.hint":
+  editor:
+    softWrapHangingIndent: 2
+".haskell.hint.message":
+  editor:
+    softWrapHangingIndent: 2
+".haskell.hint.type":
+  editor:
+    softWrapHangingIndent: 2
+".haskell.latex.tex.text":
+  editor:
+    softWrapHangingIndent: 2
+".haskell.source":
+  editor:
+    softWrapHangingIndent: 2
+".hsc2hs.source":
+  editor:
+    softWrapHangingIndent: 2
 ".js.jsx.source":
+  editor:
+    softWrapHangingIndent: 2
+".litcoffee.source":
   editor:
     softWrapHangingIndent: 2
