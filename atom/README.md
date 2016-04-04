@@ -1,3 +1,6 @@
+`$ apm list --installed --bare`
+
+```
 autocomplete-emojis@2.3.0
 autocomplete-flow@1.4.0
 autocomplete-go@1.0.5
@@ -30,3 +33,4 @@ vim-mode-plus@0.25.0
 vim-mode-plus-ex-mode@0.2.0
 vim-mode-plus-ex-mode-bottom@1.0.0
 vim-mode-plus-subword-movement@0.2.2
+```
