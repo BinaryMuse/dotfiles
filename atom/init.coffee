@@ -1,8 +1,13 @@
-# auto-indent after changing line (`c c`)
+# auto-indent when changing line or inserting at end of line
 atom.commands.onDidDispatch (evt) ->
-  return unless evt.type is 'vim-mode-plus:change'
+  validCommands = [
+    'vim-mode-plus:change',
+    'vim-mode-plus:insert-after-end-of-line'
+  ]
+  return unless evt.type in validCommands
   editor = atom.workspace.getActivePaneItem()
+  element = editor.getElement()
+  return unless 'insert-mode' in element.classList
   for cursor in editor.getCursors()
     return unless cursor.getBufferColumn() is 0
-  element = editor.getElement()
-  editor.autoIndentSelectedRows() if 'insert-mode' in element.classList
+  editor.autoIndentSelectedRows()
