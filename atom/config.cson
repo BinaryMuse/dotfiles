@@ -13,13 +13,14 @@
   core:
     apmPath: "/Users/mtilley/github/apm/bin/apm"
     disabledPackages: [
-      "github"
       "vim-mode-plus-move-to-symbols"
       "vim-mode-plus-subword-movement"
       "vim-mode-plus-ex-mode-bottom"
       "elm-format"
       "vim-mode"
       "linter-js-standard"
+      "autocomplete-go"
+      "autocomplete-flow"
     ]
     themes: [
       "one-light-ui"
@@ -27,10 +28,9 @@
     ]
   editor:
     fontFamily: "Fira Code"
-    fontSize: 15
     invisibles: {}
+    scrollPastEnd: true
     showIndentGuide: true
-    softWrap: true
     softWrapHangingIndent: 2
   "elm-format":
     showNotifications: false
@@ -51,7 +51,6 @@
     flowPath: "/usr/local/bin/flow"
   "language-babel":
     allowLocalOverride: true
-    autoIndentJSX: true
   "language-elm": {}
   linter:
     gutterPosition: "Left"
@@ -60,6 +59,7 @@
     lintMarkdownFiles: true
   "markdown-preview":
     useGitHubStyle: true
+  minimap: {}
   tabs:
     enableVcsColoring: true
   "tree-view":
