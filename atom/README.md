@@ -23,14 +23,9 @@ linter@1.11.4
 linter-flow@5.1.0
 linter-js-standard@3.2.1
 merge-conflicts@1.3.7
-native-ui@0.17.0
 navigator-godef@1.0.2
 relative-numbers@0.5.1
 symbol-gen@1.0.0
 tester-go@1.0.3
-vim-mode@0.65.0
 vim-mode-plus@0.25.0
-vim-mode-plus-ex-mode@0.2.0
-vim-mode-plus-ex-mode-bottom@1.0.0
-vim-mode-plus-subword-movement@0.2.2
 ```
