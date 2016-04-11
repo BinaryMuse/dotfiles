@@ -21,6 +21,7 @@
       "linter-js-standard"
       "autocomplete-go"
       "autocomplete-flow"
+      "minimap"
     ]
     themes: [
       "one-light-ui"
