@@ -1,38 +1,64 @@
 "*":
   "atom-beautify":
-    html_preserve_newlines: false
-    js_preserve_newlines: false
-    js_space_before_conditional: false
+    elm:
+      beautify_on_save: true
+    general:
+      _analyticsUserId: "bc799039-7ec2-4220-816a-c1eba2ce54ee"
+      muteAllErrors: true
+    html:
+      preserve_newlines: false
+    js:
+      indent_size: 2
+      space_before_conditional: false
   "autocomplete-flow": {}
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
     confirmCompletion: "tab"
+  "chrome-color-picker":
+    General:
+      showButtons: true
   conceal:
     replacements:
       "::": "asdf"
   core:
-    apmPath: "/Users/mtilley/github/apm/bin/apm"
+    automaticallyUpdate: false
     disabledPackages: [
       "vim-mode-plus-move-to-symbols"
       "vim-mode-plus-subword-movement"
       "vim-mode-plus-ex-mode-bottom"
-      "elm-format"
-      "vim-mode"
-      "linter-js-standard"
       "autocomplete-go"
       "autocomplete-flow"
-      "minimap"
+      "vim-mode"
+      "linter-flow"
+      "linter-hlint"
+      "html-to-elm"
+      "builder-go"
+      "go-config"
+      "go-debug"
+      "go-get"
+      "go-plus"
+      "godoc"
+      "gofmt"
+      "gometalinter-linter"
+      "gorename"
+      "tester-go"
+      "navigator-godef"
+      "vim-mode-plus-ex-mode"
     ]
+    openEmptyEditorOnStart: false
+    telemetryConsent: "limited"
     themes: [
       "one-light-ui"
       "one-light-syntax"
     ]
+    useCustomTitleBar: true
   editor:
     fontFamily: "Fira Code"
     invisibles: {}
-    scrollPastEnd: true
+    preferredLineLength: 120
     showIndentGuide: true
     softWrapHangingIndent: 2
+    undoGroupingInterval: 200
   "elm-format":
     showNotifications: false
   "exception-reporting":
@@ -41,6 +67,7 @@
     coloured: false
   "find-and-replace":
     openProjectFindResultsInRightPane: true
+  "fortune-background-tips": {}
   git:
     thething: "yep"
   "git-diff": {}
@@ -55,21 +82,45 @@
   "language-elm": {}
   linter:
     gutterPosition: "Left"
+  "linter-elm-make":
+    lintOnTheFly: true
+    reportWarnings: false
+  "linter-eslint":
+    fixOnSave: true
+    globalNodePath: "/Users/mtilley/.nvm/versions/node/v6.7.0"
+  "linter-hlint": {}
   "linter-js-standard":
     honorStyleSettings: true
     lintMarkdownFiles: true
   "markdown-preview":
     useGitHubStyle: true
-  minimap: {}
+  minimap:
+    displayMinimapOnLeft: true
+  "package-generator": {}
+  "relative-numbers": {}
   tabs:
     enableVcsColoring: true
+  "todo-show":
+    showInTable: [
+      "Type"
+      "Text"
+      "File"
+    ]
   "tree-view":
     focusOnReveal: false
     squashDirectoryNames: true
   "vim-mode-plus":
+    automaticallyEscapeInsertModeOnActivePaneItemChange: true
+    clearHighlightSearchOnResetNormalMode: true
+    flashOnUndoRedo: true
+    flashOnUndoRedoDuration: 300
+    highlightSearch: true
     ignoreCaseForSearch: true
     setCursorToStartOfChangeOnUndoRedo: true
+    showHoverOnOperate: true
     showHoverSearchCounter: true
+    statusBarModeStringStyle: "long"
+    stayOnDelete: true
     stayOnTransformString: true
     stayOnYank: true
     useSmartcaseForSearch: true
@@ -87,6 +138,9 @@
   editor:
     softWrapHangingIndent: 2
 ".coffee.source":
+  editor:
+    softWrapHangingIndent: 2
+".elm.source":
   editor:
     softWrapHangingIndent: 2
 ".gfm.source":

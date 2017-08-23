@@ -1,36 +1,48 @@
 'atom-workspace':
+  'cmd-alt-ctrl-h': 'user:toggle-github-tab'
   'ctrl-alt-cmd-w': 'tabs:close-all-tabs'
   'cmd-shift-a': 'tree-view:add-file'
   'cmd-alt-a': 'tree-view:add-folder'
   'ctrl-p': 'fuzzy-finder:toggle-file-finder'
+  'cmd-shift-y': 'user:start-quit'
+  '^cmd-shift-y': 'user:stop-quit'
+  'cmd-shift-v': 'git:focus-git-panel'
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-shift-L': 'elm-format:file'
 'atom-text-editor.vim-mode-plus':
   'ctrl-/': 'editor:toggle-line-comments'
-'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   # ex mode
+'atom-text-editor.vim-mode-plus.normal-mode':
+  ':': 'vim-mode-plus-ex-mode:open'
+  '!': 'vim-mode-plus-ex-mode:toggle-setting'
+  'ctrl-;': 'smalls:start'
   # ':': 'vim-mode-plus-ex-mode:open'
-  ':': 'vim-mode-plus-ex-mode-boottom:toggle'
+  # ':': 'vim-mode-plus-ex-mode-boottom:toggle'
   # '!': 'vim-mode-plus-ex-mode:toggle-setting'
   # subword movement
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   'ctrl-e': 'vim-mode-plus-user:move-to-end-of-subword'
   'Q':      'vim-mode-plus-user:move-to-beginning-of-subword'
   'q':      'vim-mode-plus-user:move-to-next-subword'
   # others
-  'g c': 'vim-mode-plus:select-latest-change'
+  # 'g c': 'vim-mode-plus:select-latest-change'
   'S': 'vim-mode-plus:surround-word'
   'y s': 'vim-mode-plus:surround'
   # 'm s': 'vim-mode-plus:map-surround'
-  # 'd s': 'vim-mode-plus:delete-surround-any-pair'
-  # 'c s': 'vim-mode-plus:change-surround-any-pair'
-'atom-text-editor.vim-mode-plus.linewise:not(.insert-mode)':
+  'c s': 'vim-mode-plus:change-surround-any-pair'
+# 'atom-text-editor.vim-mode-plus.linewise:not(.insert-mode)':
   # single line toggle comments
-  'g c': 'editor:toggle-line-comments'
-'atom-text-editor.vim-mode-plus:not(.linewise):not(.insert-mode)':
+  # 'g c': 'editor:toggle-line-comments'
+# 'atom-text-editor.vim-mode-plus:not(.linewise):not(.insert-mode)':
   # visual mode toggle comments
-  'g c c': 'editor:toggle-line-comments'
+  # 'g c c': 'editor:toggle-line-comments'
 'atom-text-editor.vim-mode-plus.operator-pending-mode, atom-text-editor.vim-mode-plus.visual-mode':
   # subword motions (ciq, diq, etc)
   'i q': 'vim-mode-plus-user:inner-subword'
 # 'atom-text-editor.autocomplete-active':
 #   'enter': 'editor:newline'
+# Optional.
+# By this setting you can speedily start jump with minimal finger movement.
+# Limitation: You can't search `;` itself with smalls..
+'atom-text-editor.smalls.search':
+  ';': 'smalls:jump'

@@ -1,0 +1,106 @@
+'.source.python':
+  'self.':
+    prefix: '.'
+    description: 'self.'
+    body: 'self.'
+'.source.coffee':
+  'Snippet':
+    prefix: 'snippet'
+    description: 'A nice snippet'
+    body: """
+    '${1:name}':
+      prefix: '${1:name}'
+      body: \"""
+      $2
+      \"""
+    """
+
+  'console.group()':
+    prefix: 'group'
+    description: 'console.group()'
+    body: """
+    console.group($1)
+    $2
+    console.groupEnd($1)
+    """
+
+'.source.js':
+  'Etch Boilerplate':
+    'prefix': 'etchb'
+    'description': 'The Etch @jsx pragma and import'
+    'body': """
+    /** @jsx etch.dom */
+
+    import etch from 'etch'
+    """
+
+  'Etch Component':
+    'prefix': 'etchc'
+    'description': 'A standard Etch component'
+    'body': """
+    class ${1:Component} {
+      constructor ($2) {
+        $3etch.initialize(this)
+      }
+
+      update () {}
+
+      render () {
+        $4
+      }
+    }
+    """
+
+  'JSX Render':
+    'prefix': 'render'
+    'body': """
+    render () {
+      return (
+        $1
+      )
+    }
+    """
+
+  'JSX Return':
+    'prefix': 'return'
+    'body': """
+    return (
+      $1
+    )
+    """
+
+  'Block Component':
+    'prefix': 'blockc'
+    body: """
+    <${1:div}$2>
+      $3
+    </${1:div}>
+    """
+
+  'Inline Component':
+    prefix: 'inlinec'
+    body: "<${1:div}$2>$3</${1:div}>"
+
+  'Describe':
+    prefix: 'de'
+    body: """
+    describe('$1', () => {
+      $2
+    })
+    """
+
+  It:
+    prefix: 'it'
+    body: """
+    it('$1', ${2:async }() => {
+      $3
+    })
+    """
+
+  'Await Timer':
+    prefix: 'awtime'
+    body: "await new Promise(res => setTimeout(res, ${1:100}))"
+
+  'Await Until':
+    prefix: 'until'
+    body: "await until(() => { $1 })"

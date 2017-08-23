@@ -1,0 +1,302 @@
+{
+  "*": {
+    "atom-beautify": {
+      "elm": {
+        "beautify_on_save": true
+      },
+      "general": {
+        "_analyticsUserId": "bc799039-7ec2-4220-816a-c1eba2ce54ee",
+        "muteAllErrors": true
+      },
+      "html": {
+        "preserve_newlines": false
+      },
+      "js": {
+        "indent_size": 2,
+        "space_before_conditional": false
+      }
+    },
+    "atom-package-deps": {
+      "ignored": []
+    },
+    "autocomplete-flow": {},
+    "autocomplete-plus": {
+      "autoActivationDelay": 0,
+      "backspaceTriggersAutocomplete": true,
+      "confirmCompletion": "tab"
+    },
+    "chrome-color-picker": {
+      "General": {
+        "showButtons": true
+      }
+    },
+    "conceal": {
+      "replacements": {
+        "::": "asdf"
+      }
+    },
+    "core": {
+      "automaticallyUpdate": false,
+      "closeDeletedFileTabs": true,
+      "disabledPackages": [
+        "vim-mode-plus-move-to-symbols",
+        "vim-mode-plus-subword-movement",
+        "vim-mode-plus-ex-mode-bottom",
+        "autocomplete-go",
+        "autocomplete-flow",
+        "vim-mode",
+        "linter-flow",
+        "linter-hlint",
+        "html-to-elm",
+        "builder-go",
+        "go-config",
+        "go-debug",
+        "go-get",
+        "go-plus",
+        "godoc",
+        "gofmt",
+        "gometalinter-linter",
+        "gorename",
+        "tester-go",
+        "navigator-godef",
+        "vim-mode-plus-ex-mode",
+        "atom-spotify2",
+        "symbol-gen",
+        "atom-beautify",
+        "elm-navigator"
+      ],
+      "projectHome": "/Users/mtilley/src",
+      "telemetryConsent": "limited",
+      "themes": [
+        "one-light-ui",
+        "one-light-syntax"
+      ],
+      "titleBar": "custom"
+    },
+    "editor": {
+      "fontFamily": "Fira Code",
+      "invisibles": {},
+      "preferredLineLength": 120,
+      "showIndentGuide": true,
+      "softWrapHangingIndent": 2,
+      "undoGroupingInterval": 200
+    },
+    "elm": {},
+    "elm-format": {
+      "formatOnSave": false,
+      "showNotifications": false
+    },
+    "exception-reporting": {
+      "userId": "0105e07e-ea6b-39bc-7746-73f63884809f"
+    },
+    "file-icons": {
+      "coloured": false
+    },
+    "find-and-replace": {
+      "projectSearchResultsPaneSplitDirection": "right",
+      "searchContextLineCountAfter": 3,
+      "searchContextLineCountBefore": 3
+    },
+    "fortune-background-tips": {},
+    "fuzzy-finder": {
+      "ignoredNames": [
+        "__generated__"
+      ],
+      "preserveLastSearch": true
+    },
+    "git": {
+      "thething": "yep"
+    },
+    "git-diff": {},
+    "git-pear": {
+      "pairs": [
+        "Michelle Tilley;michelle@michelletilley.net",
+        "Katrina Uychaco;kuychaco@github.com",
+        "Antonio Scandurra;as-cii@github.com"
+      ]
+    },
+    "github": {
+      "gitDiagnostics": true,
+      "githubEnabled": true,
+      "useLegacyPanels": false
+    },
+    "gometalinter-linter": {
+      "args": [
+        "-e /comment on exported /"
+      ]
+    },
+    "ide-flow": {
+      "flowPath": "/usr/local/bin/flow"
+    },
+    "language-babel": {
+      "allowLocalOverride": true
+    },
+    "language-elm": {
+      "elmOraclePath": "/Users/mtilley/.nvm/versions/node/v8.4.0/bin/elm-oracle",
+      "minCharsForAutocomplete": 2
+    },
+    "linter": {},
+    "linter-elm-make": {
+      "lintOnTheFly": true,
+      "reportWarnings": false
+    },
+    "linter-eslint": {
+      "fixOnSave": true,
+      "globalNodePath": "/Users/mtilley/.nvm/versions/node/v6.7.0"
+    },
+    "linter-hlint": {},
+    "linter-js-standard": {
+      "honorStyleSettings": true,
+      "lintMarkdownFiles": true
+    },
+    "linter-ui-default": {
+      "panelHeight": 69,
+      "panelRepresents": "Entire Project",
+      "showPanel": true,
+      "showTooltip": false,
+      "statusBarRepresents": "Entire Project"
+    },
+    "markdown-preview": {
+      "useGitHubStyle": true
+    },
+    "minimap": {
+      "displayMinimapOnLeft": true
+    },
+    "one-light-ui": {},
+    "package-generator": {},
+    "relative-numbers": {
+      "showAbsoluteNumbers": true,
+      "softWrapsCount": false,
+      "trueNumberCurrentLine": false
+    },
+    "smalls": {
+      "showDeprecationWarning": false
+    },
+    "tabs": {
+      "enableVcsColoring": true
+    },
+    "todo-show": {
+      "showInTable": [
+        "Type",
+        "Text",
+        "File"
+      ]
+    },
+    "tree-view": {
+      "focusOnReveal": false,
+      "hideVcsIgnoredFiles": true,
+      "squashDirectoryNames": true
+    },
+    "vim-mode-plus": {
+      "automaticallyEscapeInsertModeOnActivePaneItemChange": true,
+      "clearHighlightSearchOnResetNormalMode": true,
+      "flashOnUndoRedo": true,
+      "flashOnUndoRedoDuration": 300,
+      "highlightSearch": true,
+      "ignoreCaseForSearch": true,
+      "keymapCCToChangeInnerSmartWord": true,
+      "keymapPToPutWithAutoIndent": true,
+      "keymapSemicolonToInnerAnyPairInOperatorPendingMode": true,
+      "keymapUnderscoreToReplaceWithRegister": true,
+      "setCursorToStartOfChangeOnUndoRedo": true,
+      "showHoverOnOperate": true,
+      "showHoverSearchCounter": true,
+      "statusBarModeStringStyle": "long",
+      "stayOnDelete": true,
+      "stayOnTransformString": true,
+      "stayOnYank": true,
+      "useClipboardAsDefaultRegister": false,
+      "useSmartcaseForSearch": true
+    },
+    "vim-modeline": {},
+    "welcome": {
+      "showOnStartup": false
+    },
+    "whitespace": {}
+  },
+  ".babel.regexp.source": {
+    "editor": {
+      "softWrapHangingIndent": 2
+    }
+  },
+  ".c2hs.source": {
+    "editor": {
+      "softWrapHangingIndent": 2
+    }
+  },
+  ".cabal.source": {
+    "editor": {
+      "softWrapHangingIndent": 2
+    }
+  },
+  ".coffee.source": {
+    "editor": {
+      "softWrapHangingIndent": 2
+    }
+  },
+  ".elm.source": {
+    "editor": {
+      "softWrapHangingIndent": 2
+    }
+  },
+  ".gfm.source": {
+    "editor": {
+      "softWrapHangingIndent": 2
+    }
+  },
+  ".go.source": {
+    "editor": {
+      "softWrapHangingIndent": 2
+    }
+  },
+  ".gohtml.html.text": {
+    "editor": {
+      "softWrapHangingIndent": 2
+    }
+  },
+  ".gotemplate.source": {
+    "editor": {
+      "softWrapHangingIndent": 2
+    }
+  },
+  ".haskell.hint": {
+    "editor": {
+      "softWrapHangingIndent": 2
+    }
+  },
+  ".haskell.hint.message": {
+    "editor": {
+      "softWrapHangingIndent": 2
+    }
+  },
+  ".haskell.hint.type": {
+    "editor": {
+      "softWrapHangingIndent": 2
+    }
+  },
+  ".haskell.latex.tex.text": {
+    "editor": {
+      "softWrapHangingIndent": 2
+    }
+  },
+  ".haskell.source": {
+    "editor": {
+      "softWrapHangingIndent": 2
+    }
+  },
+  ".hsc2hs.source": {
+    "editor": {
+      "softWrapHangingIndent": 2
+    }
+  },
+  ".js.jsx.source": {
+    "editor": {
+      "softWrapHangingIndent": 2
+    }
+  },
+  ".litcoffee.source": {
+    "editor": {
+      "softWrapHangingIndent": 2
+    }
+  }
+}

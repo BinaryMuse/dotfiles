@@ -9,3 +9,4 @@ vim/.VimballRecord
 /atom/blob-store/
 /atom/compile-cache/
 /atom/node_modules/
+/atom/snapshot-cache/
