@@ -12,6 +12,13 @@ if atom.devMode
 #   pane.setPendingItem(null)
 #   process.nextTick () => atom.views.getView(item).focus()
 
+  pidEl = document.createElement('div')
+  pidEl.textContent = "PID: #{process.pid}"
+  pidEl.style.display = "inline-block"
+  pidEl.style.paddingLeft = "3px"
+  atom.packages.serviceHub.consume 'status-bar', '^1.0.0', (statusBar) ->
+    statusBar.addLeftTile(item: pidEl, priority: -100)
+
 handleAutoIndentAfterChangeLine = (evt) ->
   # validCommands = [
   #   'vim-mode-plus:change',
