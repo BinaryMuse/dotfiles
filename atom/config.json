@@ -63,7 +63,8 @@
         "atom-spotify2",
         "symbol-gen",
         "atom-beautify",
-        "elm-navigator"
+        "elm-navigator",
+        "linter"
       ],
       "projectHome": "/Users/mtilley/src",
       "telemetryConsent": "limited",
@@ -150,7 +151,7 @@
       "lintMarkdownFiles": true
     },
     "linter-ui-default": {
-      "panelHeight": 69,
+      "panelHeight": -22,
       "panelRepresents": "Entire Project",
       "showPanel": true,
       "showTooltip": false,
