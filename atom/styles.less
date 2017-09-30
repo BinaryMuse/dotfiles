@@ -13,7 +13,12 @@ atom-text-editor .line-number > .absolute {
 
 * {
   -webkit-font-smoothing: antialiased;
-  -webkit-font-feature-settings: "liga" on, "calt" on;
+//   -webkit-font-feature-settings: "liga" on, "calt" on;
+}
+
+atom-text-editor .line.cursor-line {
+  font-feature-settings: normal;
+  font-variant-ligatures: none;
 }
 
 body.dev-mode {
