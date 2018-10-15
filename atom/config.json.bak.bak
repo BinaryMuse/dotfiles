@@ -1,11 +1,5 @@
 {
   "*": {
-    "activate-power-mode": {
-      "plugins": {
-        "playAudio": true,
-        "screenShake": true
-      }
-    },
     "atom-beautify": {
       "elm": {
         "beautify_on_save": true
@@ -21,10 +15,6 @@
         "indent_size": 2,
         "space_before_conditional": false
       }
-    },
-    "atom-ide-ui": {
-      "atom-ide-diagnostics-ui": {},
-      "use": {}
     },
     "atom-package-deps": {
       "ignored": []
@@ -55,37 +45,38 @@
         "autocomplete-go",
         "autocomplete-flow",
         "vim-mode",
+        "linter-flow",
+        "linter-hlint",
         "html-to-elm",
         "builder-go",
         "go-config",
+        "go-debug",
         "go-get",
+        "go-plus",
         "godoc",
         "gofmt",
         "gometalinter-linter",
         "gorename",
         "tester-go",
         "navigator-godef",
+        "vim-mode-plus-ex-mode",
         "atom-spotify2",
         "symbol-gen",
-        "linter",
-        "atom-typescript",
-        "language-haskell",
-        "activate-power-mode"
+        "atom-beautify",
+        "elm-navigator"
       ],
-      "openEmptyEditorOnStart": false,
       "projectHome": "/Users/mtilley/src",
       "telemetryConsent": "limited",
       "themes": [
         "one-light-ui",
         "one-light-syntax"
       ],
-      "useTreeSitterParsers": true
+      "titleBar": "custom"
     },
     "editor": {
       "fontFamily": "Fira Code",
       "invisibles": {},
       "preferredLineLength": 120,
-      "scrollPastEnd": true,
       "showIndentGuide": true,
       "softWrapHangingIndent": 2,
       "undoGroupingInterval": 200
@@ -125,10 +116,8 @@
       ]
     },
     "github": {
-      "automaticCommitMessageWrapping": true,
       "gitDiagnostics": true,
       "githubEnabled": true,
-      "keyboardNavigationDelay": 50,
       "useLegacyPanels": false
     },
     "gometalinter-linter": {
@@ -139,7 +128,6 @@
     "ide-flow": {
       "flowPath": "/usr/local/bin/flow"
     },
-    "ide-python": {},
     "language-babel": {
       "allowLocalOverride": true
     },
@@ -153,6 +141,7 @@
       "reportWarnings": false
     },
     "linter-eslint": {
+      "fixOnSave": true,
       "globalNodePath": "/Users/mtilley/.nvm/versions/node/v6.7.0"
     },
     "linter-hlint": {},
@@ -161,14 +150,13 @@
       "lintMarkdownFiles": true
     },
     "linter-ui-default": {
-      "panelHeight": 195,
+      "panelHeight": 69,
       "panelRepresents": "Entire Project",
       "showPanel": true,
       "showTooltip": false,
       "statusBarRepresents": "Entire Project"
     },
     "markdown-preview": {
-      "allowUnsafeProtocols": true,
       "useGitHubStyle": true
     },
     "minimap": {
@@ -176,22 +164,6 @@
     },
     "one-light-ui": {},
     "package-generator": {},
-    "prettier-atom": {
-      "formatOnSaveOptions": {
-        "enabled": true,
-        "isDisabledIfNotInPackageJson": true,
-        "showInStatusBar": true
-      },
-      "scopes": {
-        "typescript": [
-          "source.ts",
-          "source.tsx",
-          "source.ts.tsx",
-          "source.typescript"
-        ]
-      },
-      "useEslint": true
-    },
     "relative-numbers": {
       "showAbsoluteNumbers": true,
       "softWrapsCount": false,
@@ -211,7 +183,6 @@
       ]
     },
     "tree-view": {
-      "autoReveal": true,
       "focusOnReveal": false,
       "hideVcsIgnoredFiles": true,
       "squashDirectoryNames": true
@@ -326,11 +297,6 @@
   ".litcoffee.source": {
     "editor": {
       "softWrapHangingIndent": 2
-    }
-  },
-  ".rust.source": {
-    "editor": {
-      "preferredLineLength": 99
     }
   }
 }

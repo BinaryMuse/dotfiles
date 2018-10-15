@@ -7,6 +7,7 @@
   'cmd-shift-y': 'user:start-quit'
   '^cmd-shift-y': 'user:stop-quit'
   'cmd-shift-v': 'git:focus-git-panel'
+  'cmd-alt-shift-g': 'github:toggle-expanded-commit-message-editor'
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-shift-L': 'elm-format:file'
 'atom-text-editor.vim-mode-plus':
