@@ -10,6 +10,7 @@
     diffc = diff --color
     diffcc = diff --color --cached
     su = submodule update --init --recursive
+    cor = !git for-each-ref --sort=-committerdate --format='%(refname:short) (%(committerdate:relative))' refs/heads | fzf --reverse --height 35% --nth 1 | awk '{print $1}' | xargs git checkout
 [github]
     user = <%= print("GitHub Username: "); STDOUT.flush; STDIN.gets.chomp %>
     token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>
